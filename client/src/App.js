@@ -1,8 +1,15 @@
-
+import {Routes,Route} from 'react-router-dom'
+import HomePage from './pages/HomePage';
+import Register from './pages/auth/Register';
+import Login from './pages/auth/Login';
 function App() {
   return (
     <div>
-       <h1 className = "text-danger">JeevanSetu</h1>
+       <Routes >
+          <Route path="/" element={<HomePage />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+       </Routes>
     </div>
   );
 }
