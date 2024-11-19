@@ -36,7 +36,7 @@ const userSchema = new mongoose.Schema({
     },
     dateOfBirth: {
         type: Date,
-        required: [true, 'Enter date of birth']
+        required: [false, 'Enter date of birth']
     },
     website: {
         type: String
@@ -46,28 +46,6 @@ const userSchema = new mongoose.Schema({
         required: [true, 'Enter phone number'],
         unique: true,
         match: [/^\d{10}$/, 'Please enter a valid 10-digit phone number']
-    },
-    address: {
-        street: {
-            type: String,
-            required: [true, "Enter street address"]
-        },
-        city: {
-            type: String,
-            required: [true, "Enter city"]
-        },
-        state: {
-            type: String,
-            required: [true, "Enter state"]
-        },
-        postalCode: {
-            type: String,
-            required: [true, "Enter postal code"]
-        },
-        country: {
-            type: String,
-            required: [true, "Enter country"]
-        }
     },
     isActive: {
         type: Boolean,
