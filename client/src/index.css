@@ -1,4 +1,4 @@
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,6 +9,7 @@
     width: 100%;
     object-fit: cover;
   }
+  
   .logo {
     max-width: 200px; 
     height: auto;
