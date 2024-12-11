@@ -8,10 +8,11 @@ const {
   deleteDonor,
   getDonorStats,
 } = require("../controllers/donor");
+const { verifyTokenAndAuthorization } = require("../middlewares/verifyToken");
 
 //add donor
 
-router.post("/", createDonor);
+router.post("/", verifyTokenAndAuthorization, createDonor);
 
 //get all donors
 
