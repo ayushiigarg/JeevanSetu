@@ -3,7 +3,14 @@ const app = express();
 const dotenv = require("dotenv");
 const dbConnection = require("./utils/db");
 const cron = require("node-cron");
-dotenv.config();
+const {
+  sendDetailsProspectEmail,
+} = require("./EmailService/sendDetailsProspect");
+const { sendEligibilityEmail } = require("./EmailService/sendEligibiltyEmail");
+const {
+  sendBloodDonationReminder,
+} = require("./EmailService/sendBloodDonationReminder");
+const { sendDonorDetails } = require("./EmailService/sendDonorDetails");
 
 //server
 const PORT = process.env.PORT || 5000;
@@ -15,7 +22,12 @@ app.listen(PORT, () => {
 //schedule task
 
 const run = () => {
-  cron.schedule("* * * * * *", () => {});
+  cron.schedule("* * * * * *", () => {
+    sendDetailsProspectEmail();
+    sendEligibilityEmail();
+    sendBloodDonationReminder();
+    sendDonorDetails();
+  });
 };
 
 run();
