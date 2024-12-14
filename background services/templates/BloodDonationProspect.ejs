@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood Donation Confirmation</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #222222;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.25;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .status {
+            color: #fff;
+            width: 100px;
+            padding: 10px;
+            animation: blink 2s infinite;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        @keyframes blink {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+
+        .divider {
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .email-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .email-header {
+            background-color: #1e1e1e;
+            padding: 30px;
+            color: #fff;
+        }
+
+        .email-body {
+            padding: 14px;
+            background-color: #f4f3f3;
+        }
+
+        .email-footer {
+            background-color: #1e1e1e;
+            padding: 14px;
+            color: rgb(243, 91, 91);
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-wrapper">
+        <div class="email-header">
+            <img src="https://res.cloudinary.com/dl5xf6aqa/image/upload/e_improve:outdoor/m8xgcg32qncggnpg4bob"
+                height="100px" width="400px" alt="JeevanSetu Logo" />
+        </div>
+        <div class="email-body">
+            <p>Hello <%= name %>,</p>
+            <p>Thank you for your generous blood donation:</p>
+            <p>Here are the details of places you can donate blood:</p>
+            <div class="divider"></div>
+            <p><strong>Location:</strong> Indian Red Cross Society Blood Donation Center</p>
+            <p><strong>Date:</strong> July 20, 2024</p>
+            <p><strong>Time:</strong> 10:00 AM</p>
+            <p><strong>Address:</strong> 123 Main Street, Delhi</p>
+            <p><strong>Contact Numbers:</strong></p>
+            <ul>
+                <li>(+91) 123-456-7890</li>
+                <li>(+91) 234-567-8901</li>
+                <li>(+91) 345-678-9012</li>
+                <li>(+91) 456-789-0123</li>
+                <li>(+91) 567-890-1234</li>
+            </ul>
+            <div class="divider"></div>
+            <p><strong>Location:</strong> Community Health Center</p>
+            <p><strong>Date:</strong> July 22, 2024</p>
+            <p><strong>Time:</strong> 2:00 PM</p>
+            <p><strong>Address:</strong> 456 Elm Street, Bengaluru</p>
+            <p><strong>Contact Numbers:</strong></p>
+            <ul>
+                <li>(+91) 678-901-2345</li>
+                <li>(+91) 789-012-3456</li>
+                <li>(+91) 890-123-4567</li>
+                <li>(+91) 901-234-5678</li>
+                <li>(+91) 012-345-6789</li>
+            </ul>
+            <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1720957791/hero1_trpojy.jpg"
+                alt="Blood Donation" height="250px" width="500px" />
+            <h3>Note:</h3>
+            <p>If you did not apply for blood donation, please contact us immediately.</p>
+        </div>
+        <div class="email-footer">
+            <p>If you have any questions, please don't hesitate to contact us at
+                <a href="mailto:support@jeevansetu.com">support@jeevansetu.com</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
