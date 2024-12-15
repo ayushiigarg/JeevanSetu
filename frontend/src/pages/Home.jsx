@@ -1,3 +1,4 @@
+import Contact from "../components/Contact";
 import Featured from "../components/Featured";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
@@ -8,6 +9,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Featured />
+      <Contact />
     </div>
   );
 };
