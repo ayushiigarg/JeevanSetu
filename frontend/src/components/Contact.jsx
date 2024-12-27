@@ -1,6 +1,8 @@
 const Contact = () => {
   return (
-    <div className="flex items-center justify-between my-[80px] px-4 sm:px-8">
+    <div className="flex items-center justify-between my-[80px] px-4 sm:px-8 gap-8">
+      {" "}
+      {/* Add gap here */}
       {/* Form Section */}
       <div className="flex flex-col bg-white w-full sm:w-[80%] lg:w-[60%] xl:w-[50%] p-6 rounded-lg shadow-md border-2 border-red-500">
         <h2 className="text-3xl font-bold text-center text-red-600 mb-6">
@@ -155,7 +157,6 @@ const Contact = () => {
           </button>
         </form>
       </div>
-
       {/* Information Section */}
       <div className="w-full sm:w-[40%] lg:w-[40%] xl:w-[50%] p-6 bg-gradient-to-br from-red-200 to-white rounded-lg shadow-lg">
         {/* Why Donate Blood */}

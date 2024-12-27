@@ -2,8 +2,8 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 left-0 w-full z-20 bg-white bg-opacity-80 shadow-md py-4">
-      <div className="flex items-center justify-between h-[80px] px-[100px]">
+    <div className="fixed top-0 left-0 w-full z-20 bg-white bg-opacity-90 shadow-md py-4">
+      <div className="flex items-center justify-between h-[60px] px-[100px]">
         <img
           src="/logo.jpg"
           alt="Logo"
