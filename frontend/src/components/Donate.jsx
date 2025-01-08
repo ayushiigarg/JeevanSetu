@@ -242,12 +242,10 @@ const Contact = () => {
           How Often Can I Donate?
         </h4>
         <p className="text-lg text-gray-700 mb-6">
-          You can donate whole blood every 56-90 days, depending on the type of
-          donation and the guidelines of your blood donation center. Plasma and
-          platelet donations have different frequency requirements, typically
-          allowing donors to give more frequently. It’s important to give your
-          body enough time to replenish the blood cells after each donation to
-          ensure your health remains optimal.
+          Male donors can donate again after 90 days and female donors can
+          donate again after 120 days. It’s important to give your body enough
+          time to replenish the blood cells after each donation to ensure your
+          health remains optimal.
         </p>
       </div>
     </div>

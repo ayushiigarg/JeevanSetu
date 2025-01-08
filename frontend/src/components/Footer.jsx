@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+
 const Footer = () => {
   return (
-    <div className="bg-gray-800 text-white px-[5%] md:px-[10%] py-12 mt-12">
-      <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
+    <div className="bg-gray-800 text-white px-[5%] md:px-[10%] py-12 mt-12 w-full">
+      <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0 w-full px-[5%] md:px-[10%]">
         {/* Logo & Slogan */}
         <div className="text-center md:text-left flex flex-col items-center md:items-start space-y-4">
           {/* Logo */}
@@ -32,23 +33,38 @@ const Footer = () => {
             Quick Links
           </h3>
           <ul className="space-y-2">
-            <li className="cursor-pointer hover:text-yellow-400 hover:underline">
-              Home
+            <li>
+              <RouterLink
+                to="/home"
+                className="cursor-pointer hover:text-yellow-400 hover:underline"
+              >
+                Home
+              </RouterLink>
             </li>
-            <li className="cursor-pointer hover:text-yellow-400 hover:underline">
-              About Us
+            <li>
+              <RouterLink
+                to="/about"
+                className="cursor-pointer hover:text-yellow-400 hover:underline"
+              >
+                About Us
+              </RouterLink>
             </li>
-            <li className="cursor-pointer hover:text-yellow-400 hover:underline">
-              Donate
+            <li>
+              <RouterLink
+                to="/contact"
+                className="cursor-pointer hover:text-yellow-400 hover:underline"
+              >
+                Contact
+              </RouterLink>
             </li>
-            <li className="cursor-pointer hover:text-yellow-400 hover:underline">
-              Contact
-            </li>
-            <Link to="/login">
-              <li className="cursor-pointer hover:text-yellow-400 hover:underline">
+            <li>
+              <RouterLink
+                to="/login"
+                className="cursor-pointer hover:text-yellow-400 hover:underline"
+              >
                 Admin
-              </li>
-            </Link>
+              </RouterLink>
+            </li>
           </ul>
         </div>
 
@@ -76,7 +92,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom Section */}
-      <div className="border-t border-gray-700 mt-8 pt-4 text-center">
+      <div className="border-t border-gray-700 mt-8 pt-4 text-center w-full">
         <p className="text-sm text-gray-400">
           &copy; 2024 JeevanSetu. All rights reserved.
         </p>

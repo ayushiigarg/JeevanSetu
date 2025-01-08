@@ -1,4 +1,4 @@
-import Contact from "../components/Contact";
+import Contact from "../components/Donate";
 import Featured from "../components/Featured";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";

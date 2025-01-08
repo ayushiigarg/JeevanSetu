@@ -19,7 +19,7 @@ const Menu = () => {
     setActiveLink(link);
   };
   return (
-    <div className="h-screen bg-gray-800 text-gray-200 w-[350px] shadow-lg">
+    <div className="sticky top-0 bg-gray-800 text-gray-200 w-[300px] shadow-lg">
       <ul className="flex flex-col items-start justify-start pl-[20px] overflow-y-auto h-full">
         {/* Home */}
         <Link to="/admin" onClick={() => handleActiveLink("/admin")}>
